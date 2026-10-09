@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Madori Privacy Policy</title>
+<style>
+  :root { --bg: #fbfbfa; --text: #2b2b2b; --muted: #6f6f6f; --line: #e3e3e1; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #191919; --text: #e6e6e3; --muted: #9a9a96; --line: #333331; }
+  }
+  html { background: var(--bg); }
+  body {
+    margin: 0 auto; max-width: 680px; padding: 40px 16px 64px;
+    background: var(--bg); color: var(--text);
+    font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  h1 { font-size: 28px; font-weight: 600; line-height: 1.25; margin: 0 0 8px; }
+  h2 { font-size: 18px; font-weight: 600; margin: 36px 0 8px; padding-top: 20px; border-top: 1px solid var(--line); }
+  p, li { margin: 0 0 10px; }
+  ul { padding-left: 22px; margin: 0 0 10px; }
+  .meta { color: var(--muted); font-size: 14px; margin-bottom: 28px; }
+  a { color: inherit; }
+</style>
+</head>
+<body>
+<h1>Madori Privacy Policy</h1>
+<p class="meta">Effective October 9, 2026</p>
+
+<p>Madori is a writing app developed by thenewus ("we"). This policy explains what data Madori stores, where, and what we can and can't see. In short: your writing is end-to-end encrypted, we don't show ads, and we don't track you.</p>
+
+<h2>Your account</h2>
+<p>To sync, you sign in with an email address and a password. Your password never leaves your device. The app derives two separate values from it on your device: one is sent to the server to sign you in (the server stores only a one-way hash of it), and the other is used to protect your encryption key and is never sent anywhere.</p>
+<p>The server stores:</p>
+<ul>
+  <li>your email address, a hash of the sign-in value described above, and account dates such as when you signed up and last signed in;</li>
+  <li>your encryption key, only in encrypted form: once locked with your password and once with your recovery key. We can't unlock it. The recovery key is shown to you once and is never stored anywhere in readable form.</li>
+</ul>
+<p>Emails such as the sign-up confirmation and password reset codes are sent to your address for that purpose only.</p>
+
+<h2>Your pages</h2>
+<p>The title and text of every page are encrypted on your device (AES-256-GCM) before they're uploaded, and are only decrypted on your devices. The server, and we, can't read them.</p>
+<p>Some information is not encrypted, because it's needed to sync your pages between your devices:</p>
+<ul>
+  <li>a random id for each page and the folder it's in, whether it's a folder, and its position in the list;</li>
+  <li>when each page was created, last changed or moved to the trash, and a version number for each change.</li>
+</ul>
+<p>So the server can see how many pages and folders you have, how they're arranged and when they change, but not what they're called or what they say.</p>
+
+<h2>On your device</h2>
+<p>Your pages are stored on your device unencrypted, inside the app's private storage, so you can write offline. Madori excludes them from Android backups and device transfers. Your encryption key is kept in the device's secure key storage and is removed when you sign out.</p>
+
+<h2>What we don't do</h2>
+<ul>
+  <li>No ads, no analytics, no tracking, and no third-party crash reporting.</li>
+  <li>We don't sell your data or share it with anyone for their own purposes.</li>
+  <li>We don't collect your location, contacts, files, photos or device identifiers.</li>
+</ul>
+
+<h2>Service provider</h2>
+<p>Madori's sync service runs on <a href="https://supabase.com/privacy">Supabase</a>, which hosts the database and sign-in and sends the account emails on our behalf. Like most online services, its servers keep short-lived technical logs of requests and sign-ins (such as IP address, time and device type) for security and operations. Supabase may process data in a country other than yours. We may disclose data if the law requires it; your encrypted pages would remain unreadable.</p>
+
+<h2>How long data is kept</h2>
+<p>Your account data and synced pages are kept until you delete them or your account.</p>
+
+<h2>Deleting your account</h2>
+<p>You can delete your account at any time in the app: <strong>Settings → Delete Account…</strong>. This immediately deletes your account, your email address, your encryption keys and your synced pages from the server, and the pages on that device. Your other devices delete their copies of your pages the next time they connect.</p>
+<p>We keep one record: the random id of the deleted account and the date it was deleted, with no email or content. It lets your other devices find out that the account was deleted, even if they were offline at the time. Our service provider's backups may keep deleted data for a limited period before it's removed from them too.</p>
+<p>If you no longer have the app, see <a href="delete-account.html">how to request deletion</a>.</p>
+
+<h2>Your rights</h2>
+<p>You can ask us what data we hold about you, or ask us to correct or delete it, by emailing the address below. Your pages themselves are always available on your own devices.</p>
+
+<h2>Children</h2>
+<p>Madori isn't directed at children under 13, and we don't knowingly collect data from them.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes, we'll update it on this page and change the date at the top.</p>
+
+<h2>Contact</h2>
+<p>thenewus · <a href="mailto:madori.app88@gmail.com">madori.app88@gmail.com</a></p>
+</body>
+</html>
